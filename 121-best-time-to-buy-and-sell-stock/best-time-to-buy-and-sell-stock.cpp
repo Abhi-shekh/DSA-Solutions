@@ -1,6 +1,7 @@
 class Solution {
 public:
     int maxProfit(vector<int>& prices) {
+        // compare each element with prev minima
         int mini=INT_MAX;
         int ans=0;
 
