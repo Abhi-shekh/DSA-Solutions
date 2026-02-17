@@ -10,7 +10,7 @@
  */
 class Solution {
 public:
-    ListNode* revLL(ListNode* &left, ListNode* &right){
+    void revLL(ListNode* &left, ListNode* &right){
         ListNode* curr=left;
         ListNode* prev=NULL;
         ListNode* stop=right->next;
@@ -21,7 +21,7 @@ public:
             prev=curr;
             curr=frr;
         }
-        return prev;
+        // return prev;
     }
     ListNode* reverseBetween(ListNode* head, int left, int right) {
         ListNode* dummy= new ListNode(0);
@@ -42,7 +42,7 @@ public:
         }
         ListNode* frr=rightNode->next;
 
-        ListNode* rev=revLL(leftNode, rightNode);
+        revLL(leftNode, rightNode);
         prev->next=rightNode;
         leftNode->next=frr;
 
