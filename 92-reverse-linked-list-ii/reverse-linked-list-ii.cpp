@@ -21,7 +21,7 @@ public:
             prev=curr;
             curr=frr;
         }
-        // return prev;
+        prev=right;
     }
     ListNode* reverseBetween(ListNode* head, int left, int right) {
         ListNode* dummy= new ListNode(0);
