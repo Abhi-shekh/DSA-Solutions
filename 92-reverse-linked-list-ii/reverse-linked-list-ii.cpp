@@ -43,7 +43,7 @@ public:
         ListNode* frr=rightNode->next;
 
         ListNode* rev=revLL(leftNode, rightNode);
-        prev->next=rev;
+        prev->next=rightNode;
         leftNode->next=frr;
 
         return dummy->next;
