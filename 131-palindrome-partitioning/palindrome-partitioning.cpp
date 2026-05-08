@@ -3,7 +3,7 @@ public:
 
     vector<vector<string>>res;
 
-    bool palin(string st){
+    bool palin(string &st){
         int s=0;
         int e=st.size()-1;
         while(s<=e){
